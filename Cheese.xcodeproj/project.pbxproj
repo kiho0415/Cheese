@@ -13,10 +13,13 @@
 		F90F4A152472872200200835 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90F4A132472872200200835 /* Main.storyboard */; };
 		F90F4A172472872500200835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90F4A162472872500200835 /* Assets.xcassets */; };
 		F90F4A1A2472872500200835 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90F4A182472872500200835 /* LaunchScreen.storyboard */; };
+		F9D526F124790A5F00B1001E /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D526F024790A5F00B1001E /* EditViewController.swift */; };
+		F9D526F324790B8600B1001E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D526F224790B8600B1001E /* DetailViewController.swift */; };
+		F9D526F524790B9400B1001E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D526F424790B9400B1001E /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F90F4A0A2472872200200835 /* Cheese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheese.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F90F4A0A2472872200200835 /* Cheeseliber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheeseliber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90F4A0D2472872200200835 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F90F4A0F2472872200200835 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F90F4A112472872200200835 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		F90F4A162472872500200835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F90F4A192472872500200835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F90F4A1B2472872500200835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D526F024790A5F00B1001E /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		F9D526F224790B8600B1001E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F9D526F424790B9400B1001E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,7 @@
 		F90F4A0B2472872200200835 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F90F4A0A2472872200200835 /* Cheese.app */,
+				F90F4A0A2472872200200835 /* Cheeseliber.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +69,9 @@
 				F90F4A162472872500200835 /* Assets.xcassets */,
 				F90F4A182472872500200835 /* LaunchScreen.storyboard */,
 				F90F4A1B2472872500200835 /* Info.plist */,
+				F9D526F024790A5F00B1001E /* EditViewController.swift */,
+				F9D526F224790B8600B1001E /* DetailViewController.swift */,
+				F9D526F424790B9400B1001E /* SearchViewController.swift */,
 			);
 			path = Cheese;
 			sourceTree = "<group>";
@@ -84,7 +93,7 @@
 			);
 			name = Cheese;
 			productName = Cheese;
-			productReference = F90F4A0A2472872200200835 /* Cheese.app */;
+			productReference = F90F4A0A2472872200200835 /* Cheeseliber.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D526F524790B9400B1001E /* SearchViewController.swift in Sources */,
+				F9D526F124790A5F00B1001E /* EditViewController.swift in Sources */,
 				F90F4A122472872200200835 /* ViewController.swift in Sources */,
+				F9D526F324790B8600B1001E /* DetailViewController.swift in Sources */,
 				F90F4A0E2472872200200835 /* AppDelegate.swift in Sources */,
 				F90F4A102472872200200835 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,15 +296,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F9X9VCT8TE;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = Cheese/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.kihomori.morita.Cheese;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lifeistech.cheeseliber;
+				PRODUCT_NAME = Cheeseliber;
+				PROVISIONING_PROFILE_SPECIFIER = "L12KihoMorita-Distribution";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +317,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F9X9VCT8TE;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = Cheese/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.kihomori.morita.Cheese;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lifeistech.cheeseliber;
+				PRODUCT_NAME = Cheeseliber;
+				PROVISIONING_PROFILE_SPECIFIER = "L12KihoMorita-Distribution";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
