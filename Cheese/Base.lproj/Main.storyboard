@@ -26,50 +26,20 @@
             </objects>
             <point key="canvasLocation" x="934.78260869565224" y="-274.55357142857139"/>
         </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="9aq-R5-qEG">
-            <objects>
-                <viewController id="re2-pJ-Pce" customClass="DetailViewController" customModule="Cheeseliber" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1Y8-wy-Yay">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="gA2-7i-9h6"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UT9-bW-dlL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1976.8115942028987" y="-275.22321428571428"/>
-        </scene>
-        <!--Search View Controller-->
-        <scene sceneID="v7Q-hk-jXj">
-            <objects>
-                <viewController id="CWO-Ve-l2Q" customClass="SearchViewController" customModule="Cheeseliber" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="O7E-cJ-PXf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="fQC-wG-RGm"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Wt-OS-8bC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1068" y="552"/>
-        </scene>
         <!--Edit View Controller-->
-        <scene sceneID="Zmv-BL-KI9">
+        <scene sceneID="wDr-WL-ucX">
             <objects>
-                <viewController id="zir-7h-cAS" customClass="EditViewController" customModule="Cheeseliber" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Lzk-Ex-BcU">
+                <viewController id="ahN-ee-rTa" customClass="EditViewController" customModule="Cheeseliber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MxM-6c-30P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="EGJ-d6-dbv"/>
+                        <viewLayoutGuide key="safeArea" id="gpT-eR-MjE"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wbF-ak-t6i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mF1-ST-Nkq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25" y="552"/>
+            <point key="canvasLocation" x="1844" y="-267"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2yE-y6-dae">
@@ -88,6 +58,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BkS-gr-l8p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.637681159420293" y="-274.55357142857139"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="rwI-W8-lpa">
+            <objects>
+                <viewController id="92g-rs-JaV" customClass="DetailViewController" customModule="Cheeseliber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YOf-ES-NwX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="o6B-YO-u0W"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ma-oS-Uee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="477"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="PkF-hD-cSO">
+            <objects>
+                <viewController id="53H-qL-kYK" customClass="SearchViewController" customModule="Cheeseliber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p2g-nW-so6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="AxP-SK-rGd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UwF-co-Jeq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="492"/>
         </scene>
     </scenes>
 </document>

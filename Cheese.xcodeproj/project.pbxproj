@@ -65,13 +65,13 @@
 				F90F4A0D2472872200200835 /* AppDelegate.swift */,
 				F90F4A0F2472872200200835 /* SceneDelegate.swift */,
 				F90F4A112472872200200835 /* ViewController.swift */,
+				F9D526F024790A5F00B1001E /* EditViewController.swift */,
+				F9D526F224790B8600B1001E /* DetailViewController.swift */,
+				F9D526F424790B9400B1001E /* SearchViewController.swift */,
 				F90F4A132472872200200835 /* Main.storyboard */,
 				F90F4A162472872500200835 /* Assets.xcassets */,
 				F90F4A182472872500200835 /* LaunchScreen.storyboard */,
 				F90F4A1B2472872500200835 /* Info.plist */,
-				F9D526F024790A5F00B1001E /* EditViewController.swift */,
-				F9D526F224790B8600B1001E /* DetailViewController.swift */,
-				F9D526F424790B9400B1001E /* SearchViewController.swift */,
 			);
 			path = Cheese;
 			sourceTree = "<group>";
