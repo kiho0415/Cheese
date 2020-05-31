@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		685E19416AB0DCC0706CACC2 /* Pods_Cheese.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50294D7DDDF8813A7E7BE8FA /* Pods_Cheese.framework */; };
 		F90F4A0E2472872200200835 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4A0D2472872200200835 /* AppDelegate.swift */; };
 		F90F4A102472872200200835 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4A0F2472872200200835 /* SceneDelegate.swift */; };
 		F90F4A122472872200200835 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4A112472872200200835 /* ViewController.swift */; };
 		F90F4A152472872200200835 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90F4A132472872200200835 /* Main.storyboard */; };
 		F90F4A172472872500200835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90F4A162472872500200835 /* Assets.xcassets */; };
 		F90F4A1A2472872500200835 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90F4A182472872500200835 /* LaunchScreen.storyboard */; };
-		F9D526F124790A5F00B1001E /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D526F024790A5F00B1001E /* EditViewController.swift */; };
-		F9D526F324790B8600B1001E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D526F224790B8600B1001E /* DetailViewController.swift */; };
-		F9D526F524790B9400B1001E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D526F424790B9400B1001E /* SearchViewController.swift */; };
+		F9D526F72479121700B1001E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D526F62479121700B1001E /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		065373599184F7E38DC65233 /* Pods-Cheese.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheese.debug.xcconfig"; path = "Target Support Files/Pods-Cheese/Pods-Cheese.debug.xcconfig"; sourceTree = "<group>"; };
+		50294D7DDDF8813A7E7BE8FA /* Pods_Cheese.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cheese.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D222407C94047CF6C3B72250 /* Pods-Cheese.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheese.release.xcconfig"; path = "Target Support Files/Pods-Cheese/Pods-Cheese.release.xcconfig"; sourceTree = "<group>"; };
 		F90F4A0A2472872200200835 /* Cheeseliber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheeseliber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90F4A0D2472872200200835 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F90F4A0F2472872200200835 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,9 +29,7 @@
 		F90F4A162472872500200835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F90F4A192472872500200835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F90F4A1B2472872500200835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9D526F024790A5F00B1001E /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
-		F9D526F224790B8600B1001E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		F9D526F424790B9400B1001E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F9D526F62479121700B1001E /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				685E19416AB0DCC0706CACC2 /* Pods_Cheese.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA6F3F568C75645923A2E477 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50294D7DDDF8813A7E7BE8FA /* Pods_Cheese.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F90F4A012472872200200835 = {
 			isa = PBXGroup;
 			children = (
 				F90F4A0C2472872200200835 /* Cheese */,
 				F90F4A0B2472872200200835 /* Products */,
+				FBEB660427A27D4787DBD5DE /* Pods */,
+				DA6F3F568C75645923A2E477 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,15 +76,23 @@
 				F90F4A0D2472872200200835 /* AppDelegate.swift */,
 				F90F4A0F2472872200200835 /* SceneDelegate.swift */,
 				F90F4A112472872200200835 /* ViewController.swift */,
-				F9D526F024790A5F00B1001E /* EditViewController.swift */,
-				F9D526F224790B8600B1001E /* DetailViewController.swift */,
-				F9D526F424790B9400B1001E /* SearchViewController.swift */,
+				F9D526F62479121700B1001E /* AddViewController.swift */,
 				F90F4A132472872200200835 /* Main.storyboard */,
 				F90F4A162472872500200835 /* Assets.xcassets */,
 				F90F4A182472872500200835 /* LaunchScreen.storyboard */,
 				F90F4A1B2472872500200835 /* Info.plist */,
 			);
 			path = Cheese;
+			sourceTree = "<group>";
+		};
+		FBEB660427A27D4787DBD5DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				065373599184F7E38DC65233 /* Pods-Cheese.debug.xcconfig */,
+				D222407C94047CF6C3B72250 /* Pods-Cheese.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F90F4A1E2472872500200835 /* Build configuration list for PBXNativeTarget "Cheese" */;
 			buildPhases = (
+				E0E93AED290D0E7AF0286327 /* [CP] Check Pods Manifest.lock */,
 				F90F4A062472872200200835 /* Sources */,
 				F90F4A072472872200200835 /* Frameworks */,
 				F90F4A082472872200200835 /* Resources */,
+				1FAFB83745F42111EB8BB704 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,15 +163,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FAFB83745F42111EB8BB704 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cheese/Pods-Cheese-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cheese/Pods-Cheese-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cheese/Pods-Cheese-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0E93AED290D0E7AF0286327 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cheese-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F90F4A062472872200200835 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9D526F524790B9400B1001E /* SearchViewController.swift in Sources */,
-				F9D526F124790A5F00B1001E /* EditViewController.swift in Sources */,
+				F9D526F72479121700B1001E /* AddViewController.swift in Sources */,
 				F90F4A122472872200200835 /* ViewController.swift in Sources */,
-				F9D526F324790B8600B1001E /* DetailViewController.swift in Sources */,
 				F90F4A0E2472872200200835 /* AppDelegate.swift in Sources */,
 				F90F4A102472872200200835 /* SceneDelegate.swift in Sources */,
 			);
@@ -294,6 +355,7 @@
 		};
 		F90F4A1F2472872500200835 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 065373599184F7E38DC65233 /* Pods-Cheese.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -315,6 +377,7 @@
 		};
 		F90F4A202472872500200835 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D222407C94047CF6C3B72250 /* Pods-Cheese.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
