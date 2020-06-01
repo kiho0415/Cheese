@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class AddViewController: UIViewController {
     
@@ -33,7 +34,8 @@ class AddViewController: UIViewController {
     @IBOutlet var memoLabel: UILabel!
     @IBOutlet var memoTextview: UITextView!
 
- 
+    let realm = try! Realm()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,11 +43,33 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func save(){
+        let newcheesedate = Cheesedate()
+        newcheesedate.name = nameTextfield.text!
+        newcheesedate.type = typeTextfield.text!
+        newcheesedate.origin = originTextfield.text!
+        newcheesedate.material = materialTextfield.text!
+        newcheesedate.looks = looksTextfield.text!
+        newcheesedate.taste = tasteTextfield.text!
+        newcheesedate.memo = memoTextview.text!
+        
+        //realmに書き込む
+        try! realm.write(){
+            realm.add(newcheesedate)
+        }
         //アラートを表示
         let alert: UIAlertController = UIAlertController(title: "確認", message: "保存しました", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in})
         )
         present(alert, animated: true, completion: nil)
+        
+        //save押されたらtextfieldの中の表示をクリアする。本当はok押したらにしたいところ
+        nameTextfield.text = ""
+        typeTextfield.text = ""
+        originTextfield.text = ""
+        materialTextfield.text = ""
+        looksTextfield.text = ""
+        tasteTextfield.text = ""
+        memoTextview.text = ""
     }
 
     /*
