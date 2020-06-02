@@ -9,20 +9,26 @@
 import UIKit
 import RealmSwift
 
-class ViewController: UIViewController,UITableViewDataSource {
+class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegate{
     
     @IBOutlet var table: UITableView!
   
     
     let realm = try! Realm()
     let cheesedate = try! Realm().objects(Cheesedate.self)
+    var notificationToken:NotificationToken?    //tableviewを更新するために使う
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //テーブルビューのデータソースメソッドはVIewcontrollerに書く
         table.dataSource = self
+        table.delegate = self
         
         print(Realm.Configuration.defaultConfiguration.fileURL!)
+        //cheesedataの中に新しいものがあると、tableviewが更新される
+        notificationToken = cheesedate.observe{[weak self]_ in
+            self?.table.reloadData()
+        }
     }
     
     //セルの数

@@ -52,16 +52,22 @@ class AddViewController: UIViewController {
         newcheesedate.taste = tasteTextfield.text!
         newcheesedate.memo = memoTextview.text!
         
-        //realmに書き込む
-        try! realm.write(){
+        //名前さえ登録してあればrealmに書き込む
+        if newcheesedate.name == ""{
+           let alert: UIAlertController = UIAlertController(title: "注意", message: "チーズの名前を登録してください", preferredStyle: .alert)
+                      alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in})
+                      )
+                      present(alert, animated: true, completion: nil)
+        } else {
+            try! realm.write(){
             realm.add(newcheesedate)
+            }
+            //アラートを表示
+            let alert: UIAlertController = UIAlertController(title: "確認", message: "保存しました", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in})
+            )
+            present(alert, animated: true, completion: nil)
         }
-        //アラートを表示
-        let alert: UIAlertController = UIAlertController(title: "確認", message: "保存しました", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in})
-        )
-        present(alert, animated: true, completion: nil)
-        
         //save押されたらtextfieldの中の表示をクリアする。本当はok押したらにしたいところ
         nameTextfield.text = ""
         typeTextfield.text = ""
