@@ -12,8 +12,7 @@ import RealmSwift
 class ViewController: UIViewController,UITableViewDataSource {
     
     @IBOutlet var table: UITableView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var detailButton: UIButton!
+  
     
     let realm = try! Realm()
     let cheesedate = try! Realm().objects(Cheesedate.self)
@@ -31,9 +30,8 @@ class ViewController: UIViewController,UITableViewDataSource {
         return cheesedate.count
     }
     
-    //ID付きCellを取得してセル付属のtextlabelにテストと表示させておくとりあえず
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for: indexPath) as! cheeseListTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for: indexPath) as! CheeseTableViewCell
         cell.nameLabel.text = cheesedate[indexPath.row].name
         
         return cell
