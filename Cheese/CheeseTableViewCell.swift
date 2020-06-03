@@ -11,6 +11,7 @@ import UIKit
 class CheeseTableViewCell: UITableViewCell {
 
     @IBOutlet var nameLabel:UILabel!
+    @IBOutlet var typeLabel: UILabel!
     @IBOutlet var detailButton:UIButton!
     //override func awakeFromNib() {
       //  super.awakeFromNib()

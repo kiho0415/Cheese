@@ -166,31 +166,41 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlj-bx-33C">
-                                                    <rect key="frame" x="30" y="33" width="42" height="21"/>
+                                                    <rect key="frame" x="30" y="33" width="42" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwP-hx-TUQ">
-                                                    <rect key="frame" x="307" y="33" width="77" height="21"/>
-                                                    <state key="normal" title="詳しく見る"/>
+                                                    <rect key="frame" x="338" y="33" width="46" height="24"/>
+                                                    <state key="normal" title="詳しく"/>
                                                     <connections>
                                                         <segue destination="92g-rs-JaV" kind="show" id="E7j-1A-poh"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwj-8s-TEW">
+                                                    <rect key="frame" x="186" y="33" width="42" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="rlj-bx-33C" firstAttribute="leading" secondItem="rz3-FX-OZe" secondAttribute="leadingMargin" constant="10" id="CPo-2R-0uq"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="EwP-hx-TUQ" secondAttribute="trailing" constant="10" id="Fux-Mx-3GO"/>
+                                                <constraint firstItem="Hwj-8s-TEW" firstAttribute="top" secondItem="rz3-FX-OZe" secondAttribute="topMargin" constant="22" id="I1V-jK-bsJ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Hwj-8s-TEW" secondAttribute="bottom" constant="22" id="K26-pl-NNK"/>
+                                                <constraint firstItem="Hwj-8s-TEW" firstAttribute="centerX" secondItem="rz3-FX-OZe" secondAttribute="centerX" id="Psy-LR-aei"/>
                                                 <constraint firstItem="rlj-bx-33C" firstAttribute="top" secondItem="rz3-FX-OZe" secondAttribute="topMargin" constant="22" id="Wab-CL-2pn"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="EwP-hx-TUQ" secondAttribute="bottom" constant="25" id="qkl-ZU-Gmf"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="rlj-bx-33C" secondAttribute="bottom" constant="25" id="ql9-cK-EEj"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="EwP-hx-TUQ" secondAttribute="bottom" constant="22" id="Ypp-3H-OcF"/>
                                                 <constraint firstItem="EwP-hx-TUQ" firstAttribute="top" secondItem="rz3-FX-OZe" secondAttribute="topMargin" constant="22" id="tUw-h8-TVV"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="rlj-bx-33C" secondAttribute="bottom" constant="22" id="ygR-Qg-a9D"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="detailButton" destination="EwP-hx-TUQ" id="fDv-jF-vvR"/>
                                             <outlet property="nameLabel" destination="rlj-bx-33C" id="rRP-De-ftj"/>
+                                            <outlet property="typeLabel" destination="Hwj-8s-TEW" id="LTb-FQ-fmL"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -296,11 +306,11 @@
             </objects>
             <point key="canvasLocation" x="3769.5652173913045" y="-565.17857142857144"/>
         </scene>
-        <!--Item 1-->
+        <!--参照-->
         <scene sceneID="fl8-sO-JNu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="frZ-E6-xJh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Qoo-50-EaM"/>
+                    <tabBarItem key="tabBarItem" title="参照" id="Qoo-50-EaM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8hl-Pz-B3k">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -315,11 +325,11 @@
             </objects>
             <point key="canvasLocation" x="1969.5652173913045" y="-565.17857142857144"/>
         </scene>
-        <!--Item 2-->
+        <!--追加-->
         <scene sceneID="RgT-Gf-CJ6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MrV-e3-USd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="xda-QV-tJn"/>
+                    <tabBarItem key="tabBarItem" title="追加" id="xda-QV-tJn"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SzI-12-Hxi">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
