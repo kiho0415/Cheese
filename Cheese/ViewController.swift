@@ -17,7 +17,7 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
     let realm = try! Realm()
     let cheesedate = try! Realm().objects(Cheesedate.self).sorted(byKeyPath: "name")//名前順にする.sorted以降を追加
     var notificationToken:NotificationToken?    //tableviewを更新するために使う
-    var detailArray:[String] = [] //空箱作る。後でタッチしたセルの情報入れる
+    var detailArray:[String] = []//空箱作る。後でタッチしたセルの情報入れる
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,9 +49,9 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
         // segueのIDを確認して特定のsegueのときのみ動作させる
         if segue.identifier == "toDetailViewController" {
             // 2. 遷移先のViewControllerを取得
-            let next = segue.destination as? DetailViewController
+            let nextVC = segue.destination as? DetailViewController
             // 3. １で用意した遷移先の変数に値を渡す
-            next?.givenvaluearray = sender as! [String]
+            nextVC?.givenvaluearray = detailArray
         }
     }
     
@@ -71,7 +71,7 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(indexPath.row)番目の行が選択されました。")
         //detailArrayの中に選択されたセルの中身を入れたつもり
-        detailArray[0] = "cheesedate[indexPath.row].name"
+        detailArray.insert("cheesedate[indexPath.row].name", at: 0)
         // セルの選択を解除
         tableView.deselectRow(at: indexPath, animated: true)
         // 別の画面に遷移

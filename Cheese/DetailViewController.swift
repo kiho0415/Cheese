@@ -18,7 +18,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var tasteLabel: UILabel!
     @IBOutlet weak var mamoTextView: UITextView!
     
-    var givenvaluearray : [String] = []//値をもらうための受け箱的な
+    var givenvaluearray = Array<String>()//値をもらうための受け箱的な
     
     let realm = try! Realm()
     //保存されている全オブジェクトを取得
