@@ -18,16 +18,23 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var tasteLabel: UILabel!
     @IBOutlet weak var mamoTextView: UITextView!
     
+    var givenvaluearray : [String] = []//値をもらうための受け箱的な
+    
     let realm = try! Realm()
     //保存されている全オブジェクトを取得
     let cheesedate = try! Realm().objects(Cheesedate.self)
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+         print(cheesedate)
         
-       // nameLabel.text = cheesedate.name
+        nameLabel.text = givenvaluearray[0]
+        typeLabel.text = givenvaluearray[1]
+        originLabel.text = givenvaluearray[2]
+        looksLabel.text = givenvaluearray[3]
+        tasteLabel.text = givenvaluearray[4]
+        mamoTextView.text = givenvaluearray[5]
 
-        // Do any additional setup after loading the view.
     }
     
 

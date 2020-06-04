@@ -12,7 +12,7 @@ class CheeseTableViewCell: UITableViewCell {
 
     @IBOutlet var nameLabel:UILabel!
     @IBOutlet var typeLabel: UILabel!
-    @IBOutlet var detailButton:UIButton!
+   
     //override func awakeFromNib() {
       //  super.awakeFromNib()
         // Initialization code
@@ -21,7 +21,6 @@ class CheeseTableViewCell: UITableViewCell {
     //override func setSelected(_ selected: Bool, animated: Bool) {
       //  super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     //}
 
 }

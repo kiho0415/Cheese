@@ -171,13 +171,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwP-hx-TUQ">
-                                                    <rect key="frame" x="338" y="33" width="46" height="24"/>
-                                                    <state key="normal" title="詳しく"/>
-                                                    <connections>
-                                                        <segue destination="92g-rs-JaV" kind="show" id="E7j-1A-poh"/>
-                                                    </connections>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwj-8s-TEW">
                                                     <rect key="frame" x="186" y="33" width="42" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -187,20 +180,17 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="rlj-bx-33C" firstAttribute="leading" secondItem="rz3-FX-OZe" secondAttribute="leadingMargin" constant="10" id="CPo-2R-0uq"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="EwP-hx-TUQ" secondAttribute="trailing" constant="10" id="Fux-Mx-3GO"/>
                                                 <constraint firstItem="Hwj-8s-TEW" firstAttribute="top" secondItem="rz3-FX-OZe" secondAttribute="topMargin" constant="22" id="I1V-jK-bsJ"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Hwj-8s-TEW" secondAttribute="bottom" constant="22" id="K26-pl-NNK"/>
                                                 <constraint firstItem="Hwj-8s-TEW" firstAttribute="centerX" secondItem="rz3-FX-OZe" secondAttribute="centerX" id="Psy-LR-aei"/>
                                                 <constraint firstItem="rlj-bx-33C" firstAttribute="top" secondItem="rz3-FX-OZe" secondAttribute="topMargin" constant="22" id="Wab-CL-2pn"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="EwP-hx-TUQ" secondAttribute="bottom" constant="22" id="Ypp-3H-OcF"/>
-                                                <constraint firstItem="EwP-hx-TUQ" firstAttribute="top" secondItem="rz3-FX-OZe" secondAttribute="topMargin" constant="22" id="tUw-h8-TVV"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="rlj-bx-33C" secondAttribute="bottom" constant="22" id="ygR-Qg-a9D"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="detailButton" destination="EwP-hx-TUQ" id="fDv-jF-vvR"/>
                                             <outlet property="nameLabel" destination="rlj-bx-33C" id="rRP-De-ftj"/>
                                             <outlet property="typeLabel" destination="Hwj-8s-TEW" id="LTb-FQ-fmL"/>
+                                            <segue destination="92g-rs-JaV" kind="show" identifier="toDetailViewController" id="yQy-o3-6Te"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

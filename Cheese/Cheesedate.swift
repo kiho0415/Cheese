@@ -17,4 +17,11 @@ class Cheesedate: Object{
     @objc dynamic var looks: String = ""
     @objc dynamic var taste: String = ""
     @objc dynamic var memo: String = ""
+    
+    func  delete() {
+        try! realm!.write {
+            realm!.delete(self)
+        }
+           
+    }
 }
