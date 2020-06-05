@@ -40,7 +40,6 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
         super.setEditing(editing, animated: animated)
        table.isEditing = editing
 
-        print(editing)
     }
 
     //セルの数
@@ -68,9 +67,16 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            print("\(indexPath.row)番目の行が選択されました。")
-           //detailArrayの中に選択されたセルの中身を入れたつもり
-           detailArray.append(cheesedate[indexPath.row].name)
-           print(detailArray[0])
+           //detailArrayの中に選択されたセルの中身を入れた
+            detailArray.insert(cheesedate[indexPath.row].name, at:0)
+            detailArray.insert(cheesedate[indexPath.row].type, at:1)
+            detailArray.insert(cheesedate[indexPath.row].origin, at:2)
+            detailArray.insert(cheesedate[indexPath.row].material, at:3)
+            detailArray.insert(cheesedate[indexPath.row].looks, at:4)
+            detailArray.insert(cheesedate[indexPath.row].taste, at:5)
+            detailArray.insert(cheesedate[indexPath.row].memo, at:6)
+
+           print(detailArray)
            // セルの選択を解除
            tableView.deselectRow(at: indexPath, animated: true)
            // 別の画面に遷移
