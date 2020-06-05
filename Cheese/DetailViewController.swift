@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import RealmSwift
+//import RealmSwift
 
 
 class DetailViewController: UIViewController {
@@ -18,22 +18,34 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var tasteLabel: UILabel!
     @IBOutlet weak var mamoTextView: UITextView!
     
-    var givenvaluearray = Array<String>()//値をもらうための受け箱的な
-    
-    let realm = try! Realm()
+    //var givenarray = [String](repeating: "l", count: 5/*必要な要素数*/)
+    var givenarray:[String]? = []
+    //let realm = try! Realm()
     //保存されている全オブジェクトを取得
-    let cheesedate = try! Realm().objects(Cheesedate.self)
+   // let cheesedate = try! Realm().objects(Cheesedate.self)
+    
+   // override func viewDidAppear(_ animated: Bool){
+     //   super.viewDidAppear(animated)
+       // print(givenarray!)
+    //
+//}
+    
+    override func loadView() {
+        super.loadView()
+        print(givenarray!)
+    }
    
     override func viewDidLoad() {
         super.viewDidLoad()
-         print(cheesedate)
+      
+       //  print(cheesedate)
         
-        nameLabel.text = givenvaluearray[0]
-        typeLabel.text = givenvaluearray[1]
-        originLabel.text = givenvaluearray[2]
-        looksLabel.text = givenvaluearray[3]
-        tasteLabel.text = givenvaluearray[4]
-        mamoTextView.text = givenvaluearray[5]
+        nameLabel.text = givenarray![0]
+        //typeLabel.text = givenarray[1]
+        //originLabel.text = givenarray[2]
+        //looksLabel.text = givenarray[3]
+        //tasteLabel.text = givenarray[4]
+        //mamoTextView.text = givenarray[5]
 
     }
     

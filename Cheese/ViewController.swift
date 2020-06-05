@@ -15,7 +15,7 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
   
     
     let realm = try! Realm()
-    let cheesedate = try! Realm().objects(Cheesedate.self).sorted(byKeyPath: "name")//名前順にする.sorted以降を追加
+    let cheesedate = try! Realm().objects(Cheesedate.self)//.sorted(byKeyPath: "name")//名前順にする.sorted以降を追加
     var notificationToken:NotificationToken?    //tableviewを更新するために使う
     var detailArray:[String] = []//空箱作る。後でタッチしたセルの情報入れる
 
@@ -42,19 +42,7 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
 
         print(editing)
     }
-    
-    // segueが動作することをViewControllerに通知するメソッド
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-        // segueのIDを確認して特定のsegueのときのみ動作させる
-        if segue.identifier == "toDetailViewController" {
-            // 2. 遷移先のViewControllerを取得
-            let nextVC = segue.destination as? DetailViewController
-            // 3. １で用意した遷移先の変数に値を渡す
-            nextVC?.givenvaluearray = detailArray
-        }
-    }
-    
     //セルの数
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return cheesedate.count
@@ -68,15 +56,28 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(indexPath.row)番目の行が選択されました。")
-        //detailArrayの中に選択されたセルの中身を入れたつもり
-        detailArray.insert("cheesedate[indexPath.row].name", at: 0)
-        // セルの選択を解除
-        tableView.deselectRow(at: indexPath, animated: true)
-        // 別の画面に遷移
-        performSegue(withIdentifier: "toDetailViewController", sender: nil)
+    // segueが動作することをViewControllerに通知するメソッド
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // segueのIDを確認して特定のsegueのときのみ動作させる
+        if segue.identifier == "toDetailViewController" {
+            // 遷移先のViewControllerを取得
+            let nextVC = segue.destination as? DetailViewController
+            nextVC?.givenarray = detailArray
+           }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           print("\(indexPath.row)番目の行が選択されました。")
+           //detailArrayの中に選択されたセルの中身を入れたつもり
+           detailArray.append(cheesedate[indexPath.row].name)
+           print(detailArray[0])
+           // セルの選択を解除
+           tableView.deselectRow(at: indexPath, animated: true)
+           // 別の画面に遷移
+           performSegue(withIdentifier: "toDetailViewController", sender: nil)
+       }
+    
+
     
  
     }
