@@ -15,7 +15,8 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
   
     
     let realm = try! Realm()
-    let cheesedate = try! Realm().objects(Cheesedate.self)//.sorted(byKeyPath: "name")//名前順にする.sorted以降を追加
+  
+    let cheesedate = try! Realm().objects(Cheesedate.self)//.sorted(byKeyPath: "name")//名前順にする.sorted以降を
     var notificationToken:NotificationToken?    //tableviewを更新するために使う
     var detailArray:[String] = []//空箱作る。後でタッチしたセルの情報入れる
 
@@ -25,16 +26,16 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
         table.dataSource = self
         table.delegate = self
         //複数選択を可能にする。falseだと単一選択に
-        table.allowsMultipleSelectionDuringEditing = true
+      //  table.allowsMultipleSelectionDuringEditing = true
         //編集ボタンの設定
-        navigationItem.rightBarButtonItem = editButtonItem
+       // navigationItem.rightBarButtonItem = editButtonItem
         //何にもないところには区切り線を表示しない
         table.tableFooterView = UIView()
-       // print(Realm.Configuration.defaultConfiguration.fileURL!)
         //cheesedataの中に新しいものがあると、tableviewが更新される
         notificationToken = cheesedate.observe{[weak self]_ in
             self?.table.reloadData()
         }
+        
     }
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
@@ -76,23 +77,25 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
             detailArray.insert(cheesedate[indexPath.row].taste, at:5)
             detailArray.insert(cheesedate[indexPath.row].memo, at:6)
 
-           print(detailArray)
            // セルの選択を解除
            tableView.deselectRow(at: indexPath, animated: true)
            // 別の画面に遷移
            performSegue(withIdentifier: "toDetailViewController", sender: nil)
        }
-    
+      //スワイプしたセルを削除　※arrayNameは変数名に変更してください
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+      //   if editingStyle == UITableViewCell.EditingStyle.delete {
+        try!realm.write{
+            realm.delete(cheesedate[indexPath.row].self)
+        }
+      tableView.deleteRows(at: [indexPath], with: .automatic)
+      }
+
 
     
  
     }
-    //navigationcontrollerで遷移うまくいかない
-   //  @IBAction func byNavicationPush(_ sender: Any) {
-     //     let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "toDetailViewController") as! DetailViewController
-       //   nextVC.text = "fromViewController"
-         // self.navigationController?.pushViewController(nextVC, animated: true)
-   // }
+
     //前のやつをコピってみた
     //func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
       //     if editingStyle == .delete {
@@ -102,19 +105,6 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
            //}
        //}
     
-    //セルの編集許可
-    //func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool{
-     //   return true
-    //}
-
-    //スワイプしたセルを削除　※arrayNameは変数名に変更してください
-  // func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-    //   if editingStyle == UITableViewCell.EditingStyle.delete {
-          //  cheesedate[indexPath.row].delete()
-      //      cheesedate.remove(at: indexPath.row)
-        //    tableView.deleteRows(at: [indexPath as IndexPath], with: UITableView.RowAnimation.automatic)
-        //}
-   // }
 
 
 
