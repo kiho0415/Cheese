@@ -9,7 +9,24 @@
 import UIKit
 import RealmSwift
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    //pickerviewに表示する列の数
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+         return 1
+    }
+    //pickerviewに表示するデータの数
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+         return 8
+    }
+    //titleForRowはpickerViewに設定するデータを登録するためのメソッド
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+           return typedata[row]
+    }
+    //didSelectRowはpickerViewの各種データを選択したときに呼ばれるメソッド
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+           typeTextfield.text = typedata[row]
+       }
+    
     
     @IBOutlet var cheeseImageView: UIImageView!
     
@@ -18,6 +35,8 @@ class AddViewController: UIViewController {
     
     @IBOutlet var typeLabel: UILabel!
     @IBOutlet var typeTextfield: UITextField!
+    var pickerView = UIPickerView()
+    var typedata = ["フレッシュ","セミハード","ハード","白カビ","青カビ","ウォッシュ","シェーブル","プロセス"]
     
     @IBOutlet var originLabel: UILabel!
     @IBOutlet var originTextfield: UITextField!
@@ -38,9 +57,38 @@ class AddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        createPickerView()
     }
+    
+    func createPickerView() {
+        pickerView.delegate = self
+        //UITextFieldが持つinputViewにpickerViewを設定=入力キーボードをpickerviewに変更
+        typeTextfield.inputView = pickerView
+        // toolbarを設定
+        let toolbar = UIToolbar()
+        toolbar.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44)
+        let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(AddViewController.donePicker))
+        let cancelItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(AddViewController.cancelPicker))
+        toolbar.setItems([cancelItem,doneItem], animated: true)
+        typeTextfield.inputAccessoryView = toolbar
+    }
+    //toolbar上のボタンを押した時にイーボードを非表示にする
+    @objc func donePicker() {
+        typeTextfield.endEditing(true)
+    }
+    @objc func cancelPicker() {
+        typeTextfield.endEditing(true)
+        typeTextfield.text = ""
+    }
+   //キーボード以外の場所をタップしたときにキーボードを非表示
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        typeTextfield.endEditing(true)
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        return false
+    }
+    
     
     @IBAction func save(){
         let newcheesedate = Cheesedate()
