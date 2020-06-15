@@ -22,6 +22,11 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.navigationController!.navigationBar.barStyle = .black
+       //self.navigationController!.navigationBar.barTintColor = UIColor(red: 240, green: 209, blue: 61, alpha: 1.0)
+        //self.navigationController!.navigationBar.tintColor = .white
+       //self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+
         //テーブルビューのデータソースメソッドはVIewcontrollerに書く
         table.dataSource = self
         table.delegate = self
@@ -34,6 +39,8 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
         //cheesedataの中に新しいものがあると、tableviewが更新される
         notificationToken = cheesedate.observe{[weak self]_ in
             self?.table.reloadData()
+            
+        
         }
         
     }
@@ -47,6 +54,8 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return cheesedate.count
     }
+    
+      
     //各セルの要素を設定
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for: indexPath) as! CheeseTableViewCell
@@ -54,6 +63,10 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
         cell.typeLabel.text = cheesedate[indexPath.row].type
         
         return cell
+    }
+    //セルの高さ
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+           return 100
     }
     
     // segueが動作することをViewControllerに通知するメソッド
@@ -82,7 +95,7 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
            // 別の画面に遷移
            performSegue(withIdentifier: "toDetailViewController", sender: nil)
        }
-      //スワイプしたセルを削除　※arrayNameは変数名に変更してください
+      //スワイプしたセルを削除
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
       //   if editingStyle == UITableViewCell.EditingStyle.delete {
         try!realm.write{

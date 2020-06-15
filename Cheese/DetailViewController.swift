@@ -23,6 +23,10 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       // self.navigationController!.navigationBar.barStyle = .black
+        //self.navigationController!.navigationBar.barTintColor = #colorLiteral(red: 0.1725490196, green: 0.1725490196, blue: 0.1725490196, alpha: 1)
+        //self.navigationController!.navigationBar.tintColor = .white
+        //self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         
         nameLabel.text = givenarray[0]
         typeLabel.text = givenarray[1]
@@ -31,6 +35,14 @@ class DetailViewController: UIViewController {
         looksLabel.text = givenarray[4]
         tasteLabel.text = givenarray[5]
         memoTextView.text = givenarray[6]
+        
+        nameLabel.lineBreakMode = .byWordWrapping
+        typeLabel.lineBreakMode = .byWordWrapping
+        originLabel.lineBreakMode = .byWordWrapping
+        materialLabel.lineBreakMode = .byWordWrapping
+        looksLabel.lineBreakMode = .byWordWrapping
+        tasteLabel.lineBreakMode = .byWordWrapping
+        
 
     }
     
