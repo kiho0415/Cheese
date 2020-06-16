@@ -390,7 +390,7 @@
 				CODE_SIGN_ENTITLEMENTS = Cheese/Cheeseliber.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.1;
+				CURRENT_PROJECT_VERSION = 1.0.2;
 				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = Cheese/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -401,7 +401,7 @@
 				PRODUCT_NAME = Cheeseliber;
 				PROVISIONING_PROFILE_SPECIFIER = "L12KihoMorita-Distribution";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -413,7 +413,7 @@
 				CODE_SIGN_ENTITLEMENTS = Cheese/Cheeseliber.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.1;
+				CURRENT_PROJECT_VERSION = 1.0.2;
 				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = Cheese/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -424,7 +424,7 @@
 				PRODUCT_NAME = Cheeseliber;
 				PROVISIONING_PROFILE_SPECIFIER = "L12KihoMorita-Distribution";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
