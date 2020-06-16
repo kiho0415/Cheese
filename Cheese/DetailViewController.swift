@@ -15,8 +15,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var originLabel: UILabel!
     @IBOutlet weak var materialLabel: UILabel!
-    @IBOutlet weak var looksLabel: UILabel!
-    @IBOutlet weak var tasteLabel: UILabel!
+    @IBOutlet weak var looksTextView: UITextView!
+    @IBOutlet weak var tasteTextView: UITextView!
     @IBOutlet weak var memoTextView: UITextView!
     
     var givenarray:[String] = []
@@ -27,22 +27,19 @@ class DetailViewController: UIViewController {
         //self.navigationController!.navigationBar.barTintColor = #colorLiteral(red: 0.1725490196, green: 0.1725490196, blue: 0.1725490196, alpha: 1)
         //self.navigationController!.navigationBar.tintColor = .white
         //self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
-        
+        self.looksTextView.isEditable = false
+        self.looksTextView.isSelectable = false
+        self.tasteTextView.isEditable = false
+        self.tasteTextView.isSelectable = false
+        self.memoTextView.isEditable = false
+        self.memoTextView.isSelectable = false
         nameLabel.text = givenarray[0]
         typeLabel.text = givenarray[1]
         originLabel.text = givenarray[2]
         materialLabel.text = givenarray[3]
-        looksLabel.text = givenarray[4]
-        tasteLabel.text = givenarray[5]
+        looksTextView.text = givenarray[4]
+        tasteTextView.text = givenarray[5]
         memoTextView.text = givenarray[6]
-        
-        nameLabel.lineBreakMode = .byWordWrapping
-        typeLabel.lineBreakMode = .byWordWrapping
-        originLabel.lineBreakMode = .byWordWrapping
-        materialLabel.lineBreakMode = .byWordWrapping
-        looksLabel.lineBreakMode = .byWordWrapping
-        tasteLabel.lineBreakMode = .byWordWrapping
-        
 
     }
     
