@@ -30,6 +30,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hsC-UE-tWz">
                                                 <rect key="frame" x="110" y="0.0" width="264" height="34"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <color key="textColor" red="0.41419380900000002" green="0.27585849169999999" blue="0.1136713102" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -47,6 +48,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rV9-8J-DjB">
                                                 <rect key="frame" x="44" y="0.0" width="330" height="34"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <color key="textColor" red="0.41419380900000002" green="0.27585849169999999" blue="0.1136713102" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -64,6 +66,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mg9-dy-LmQ">
                                                 <rect key="frame" x="44" y="0.0" width="330" height="34"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <color key="textColor" red="0.41419380900000002" green="0.27585849169999999" blue="0.1136713102" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -81,6 +84,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ohb-hg-Lri">
                                                 <rect key="frame" x="61" y="0.0" width="313" height="34"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <color key="textColor" red="0.41419380900000002" green="0.27585849169999999" blue="0.1136713102" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -98,6 +102,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c0G-rQ-9NU">
                                                 <rect key="frame" x="61" y="0.0" width="313" height="34"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <color key="textColor" red="0.41419380900000002" green="0.27585849169999999" blue="0.1136713102" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -115,6 +120,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Npa-2c-wjt">
                                                 <rect key="frame" x="27" y="0.0" width="347" height="34"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <color key="textColor" red="0.41419380900000002" green="0.27585849169999999" blue="0.1136713102" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -139,7 +145,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="128" id="Pl8-fA-Mei"/>
                                                 </constraints>
-                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.41419380900000002" green="0.27585849169999999" blue="0.1136713102" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -221,7 +227,7 @@
                                                     <rect key="frame" x="103" y="66" width="204" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="14"/>
-                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" red="0.66666666669999997" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="highlightedColor" red="1" green="0.99710898429999995" blue="0.82001580780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2020-06-16 0.png" translatesAutoresizingMaskIntoConstraints="NO" id="bGU-HK-Wpm">
@@ -282,7 +288,7 @@
         <scene sceneID="rwI-W8-lpa">
             <objects>
                 <viewController id="92g-rs-JaV" customClass="DetailViewController" customModule="Cheeseliber" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YOf-ES-NwX">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="YOf-ES-NwX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -300,7 +306,7 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="41a-Bv-Xaf">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="41a-Bv-Xaf">
                                 <rect key="frame" x="50" y="194" width="314" height="549"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="9NY-Ef-uRC">
@@ -313,7 +319,7 @@
                                                     <constraint firstAttribute="width" constant="34" id="nVn-ll-YAO"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.66666666669999997" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
@@ -338,7 +344,7 @@
                                                     <constraint firstAttribute="height" constant="17" id="z6R-gZ-0fv"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.66666666669999997" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsV-GS-e2m">
@@ -362,7 +368,7 @@
                                                     <constraint firstAttribute="width" constant="53" id="toL-Zv-QgK"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.66666666669999997" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vc-YU-JA4">
@@ -386,7 +392,7 @@
                                                     <constraint firstAttribute="height" constant="17" id="iv4-21-KDI"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.66666666669999997" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GgG-ea-GCm">
@@ -405,7 +411,7 @@
                                             <constraint firstAttribute="trailing" secondItem="GgG-ea-GCm" secondAttribute="trailing" id="Cqu-5Z-Yeq"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="6Bt-of-ggg">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="6Bt-of-ggg">
                                         <rect key="frame" x="0.0" y="295" width="314" height="74"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="味" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6D-Uw-XNV">
@@ -415,10 +421,10 @@
                                                     <constraint firstAttribute="width" constant="23" id="HeE-Tj-laN"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.66666666669999997" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yW9-l4-cCo">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yW9-l4-cCo">
                                                 <rect key="frame" x="0.0" y="24" width="314" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="BLk-M2-tW6"/>
@@ -436,7 +442,7 @@
                                             <constraint firstAttribute="trailing" secondItem="yW9-l4-cCo" secondAttribute="trailing" id="hfK-l4-7fq"/>
                                         </constraints>
                                     </stackView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-1q-jhn">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-1q-jhn">
                                         <rect key="frame" x="0.0" y="414" width="314" height="135"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <constraints>

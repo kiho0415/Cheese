@@ -26,9 +26,7 @@ class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
            typeTextfield.text = typedata[row]
        }
-    
-    
-    @IBOutlet var cheeseImageView: UIImageView!
+
     
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var nameTextfield: UITextField!
@@ -58,10 +56,7 @@ class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         createPickerView()
-      //  self.navigationController!.navigationBar.barStyle = .black
-        //self.navigationController!.navigationBar.barTintColor = #colorLiteral(red: 0.1725490196, green: 0.1725490196, blue: 0.1725490196, alpha: 1)
-        //self.navigationController!.navigationBar.tintColor = .white
-        //self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+   
     }
     
     func createPickerView() {
@@ -117,6 +112,14 @@ class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
             //アラートを表示
             let alert: UIAlertController = UIAlertController(title: "確認", message: "保存しました", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in
+                //ok押されたらtextfieldの中の表示をクリアする。
+                self.nameTextfield.text = ""
+                self.typeTextfield.text = ""
+                self.originTextfield.text = ""
+                self.materialTextfield.text = ""
+                self.looksTextfield.text = ""
+                self.tasteTextfield.text = ""
+                self.memoTextview.text = ""
                 //アラートが消えるのと画面遷移が重ならないように0.5秒後に画面遷移するようにしてる
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 // 0.5秒後に実行したい処理.ok押したら調べる画面のtabbarに戻る
@@ -127,14 +130,7 @@ class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
             //アラートの表示
             present(alert, animated: true, completion: nil)
         }
-        //save押されたらtextfieldの中の表示をクリアする。本当はok押したらにしたいところ
-        nameTextfield.text = ""
-        typeTextfield.text = ""
-        originTextfield.text = ""
-        materialTextfield.text = ""
-        looksTextfield.text = ""
-        tasteTextfield.text = ""
-        memoTextview.text = ""
+     
     }
 
     /*

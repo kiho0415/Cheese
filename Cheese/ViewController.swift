@@ -30,24 +30,17 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
         //テーブルビューのデータソースメソッドはVIewcontrollerに書く
         table.dataSource = self
         table.delegate = self
-        //複数選択を可能にする。falseだと単一選択に
-      //  table.allowsMultipleSelectionDuringEditing = true
-        //編集ボタンの設定
-       // navigationItem.rightBarButtonItem = editButtonItem
         //何にもないところには区切り線を表示しない
         table.tableFooterView = UIView()
         //cheesedataの中に新しいものがあると、tableviewが更新される
         notificationToken = cheesedate.observe{[weak self]_ in
             self?.table.reloadData()
-            
-        
         }
         
     }
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
        table.isEditing = editing
-
     }
 
     //セルの数
@@ -55,7 +48,6 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
         return cheesedate.count
     }
     
-      
     //各セルの要素を設定
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for: indexPath) as! CheeseTableViewCell
@@ -109,14 +101,7 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
  
     }
 
-    //前のやつをコピってみた
-    //func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-      //     if editingStyle == .delete {
-        //       cheesedate[indexPath.row].delete()
-          //     cheesedate.remove(at: indexPath.row)
-            //   tableView.deleteRows(at: [indexPath], with: .fade)
-           //}
-       //}
+
     
 
 
