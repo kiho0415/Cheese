@@ -116,8 +116,15 @@ class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
             }
             //アラートを表示
             let alert: UIAlertController = UIAlertController(title: "確認", message: "保存しました", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in})
-            )
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in
+                //アラートが消えるのと画面遷移が重ならないように0.5秒後に画面遷移するようにしてる
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                // 0.5秒後に実行したい処理.ok押したら調べる画面のtabbarに戻る
+                let UINavigationController = self.tabBarController?.viewControllers?[0];
+                self.tabBarController?.selectedViewController = UINavigationController;
+                }
+            }))
+            //アラートの表示
             present(alert, animated: true, completion: nil)
         }
         //save押されたらtextfieldの中の表示をクリアする。本当はok押したらにしたいところ

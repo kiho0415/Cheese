@@ -15,7 +15,6 @@
 		F90F4A172472872500200835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90F4A162472872500200835 /* Assets.xcassets */; };
 		F90F4A1A2472872500200835 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90F4A182472872500200835 /* LaunchScreen.storyboard */; };
 		F927FDD82493CE7F001C423E /* CheeseColorFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927FDD72493CE7F001C423E /* CheeseColorFile.swift */; };
-		F96F43932497C4B600A9837C /* 07やさしさゴシック.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F96F43922497C4B600A9837C /* 07やさしさゴシック.ttf */; };
 		F96F43962497CBAC00A9837C /* スクリーンショット 2020-06-16 0.png in Resources */ = {isa = PBXBuildFile; fileRef = F96F43952497CBAC00A9837C /* スクリーンショット 2020-06-16 0.png */; };
 		F9BF828A248375CF00F4BFBD /* Cheesedate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BF8289248375CF00F4BFBD /* Cheesedate.swift */; };
 		F9D30B5E2485B14B009123B7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D30B5D2485B14B009123B7 /* DetailViewController.swift */; };
@@ -37,7 +36,6 @@
 		F90F4A192472872500200835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F90F4A1B2472872500200835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F927FDD72493CE7F001C423E /* CheeseColorFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheeseColorFile.swift; sourceTree = "<group>"; };
-		F96F43922497C4B600A9837C /* 07やさしさゴシック.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "07やさしさゴシック.ttf"; sourceTree = "<group>"; };
 		F96F43942497C55400A9837C /* Cheeseliber.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cheeseliber.entitlements; sourceTree = "<group>"; };
 		F96F43952497CBAC00A9837C /* スクリーンショット 2020-06-16 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2020-06-16 0.png"; sourceTree = "<group>"; };
 		F9BF8289248375CF00F4BFBD /* Cheesedate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cheesedate.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				F927FDD72493CE7F001C423E /* CheeseColorFile.swift */,
 				F90F4A132472872200200835 /* Main.storyboard */,
 				F90F4A162472872500200835 /* Assets.xcassets */,
-				F96F43922497C4B600A9837C /* 07やさしさゴシック.ttf */,
 				F90F4A182472872500200835 /* LaunchScreen.storyboard */,
 				F90F4A1B2472872500200835 /* Info.plist */,
 				F9BF8289248375CF00F4BFBD /* Cheesedate.swift */,
@@ -181,7 +178,6 @@
 				F90F4A172472872500200835 /* Assets.xcassets in Resources */,
 				F96F43962497CBAC00A9837C /* スクリーンショット 2020-06-16 0.png in Resources */,
 				F90F4A152472872200200835 /* Main.storyboard in Resources */,
-				F96F43932497C4B600A9837C /* 07やさしさゴシック.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +386,7 @@
 				CODE_SIGN_ENTITLEMENTS = Cheese/Cheeseliber.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.2;
+				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = Cheese/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -413,7 +409,7 @@
 				CODE_SIGN_ENTITLEMENTS = Cheese/Cheeseliber.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.2;
+				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = Cheese/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
