@@ -22,10 +22,7 @@ class ViewController: UIViewController,UITableViewDataSource ,UITableViewDelegat
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.navigationController!.navigationBar.barStyle = .black
-       //self.navigationController!.navigationBar.barTintColor = UIColor(red: 240, green: 209, blue: 61, alpha: 1.0)
-        //self.navigationController!.navigationBar.tintColor = .white
-       //self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+
 
         //テーブルビューのデータソースメソッドはVIewcontrollerに書く
         table.dataSource = self

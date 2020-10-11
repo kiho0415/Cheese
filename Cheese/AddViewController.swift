@@ -53,6 +53,7 @@ class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
 
     let realm = try! Realm()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         createPickerView()
@@ -107,7 +108,7 @@ class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
                       present(alert, animated: true, completion: nil)
         } else {
             try! realm.write(){
-            realm.add(newcheesedate)
+                realm.add(newcheesedate)
             }
             //アラートを表示
             let alert: UIAlertController = UIAlertController(title: "確認", message: "保存しました", preferredStyle: .alert)
@@ -133,14 +134,5 @@ class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
      
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
